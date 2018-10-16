@@ -1,0 +1,19 @@
+RVM Regression Specifications: 
+	initial value for alpha = 1
+	sigma = 50
+	5000 iterations
+	10 repetitions for each dataset
+
+Regression Experiments - specifications:
+	rbf kernel (gamma - [1,10])
+	10 repetitions for NoisyU, NoisyG, 20 for Friedman1, Friedman2, Friedman3, boston
+    
+
+Regression Results
+Dataset:   SVM: RMSE  SVM : Number of SupVec   RVM: RMSE   RVM: Number of Relevant Vectors   SVM gamma   RVM gamma
+'NoisyU' 	' 0.073'    '15.0'                  '0.050'                '10.0'                  '1.0'       '1.0'  0.023, 5.0
+ NoisyG'     '0.077'    '15.0'                  '0.058'                '7.0'                   '1.0'       '1.0'  0.019, 8.0 
+'Friedman1'   '3.468'   '229.0'                 '5.438'                '219.0'                 '1.0'       '2.0'  
+'Friedman2'  '405.84'   '240.0'                 '387.129'             '238.0'                  '3.0'       '1.0'  18.711 37.0
+'Friedman3'   '0.341'    201.0'                  '0.38'               '125.0'                  '4.0'       '4.0'  -0.039, 76
+ boston'      '8.38'    '481.0'                  '7.694'              '470.0'                  '1.0'       '5.0'   0.686, 11.0
